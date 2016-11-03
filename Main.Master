@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="rb_shoe_store.Main" %>
+<%@ Register TagName="RbSMonthMenu" TagPrefix="Rbs" Src="~/UC/MonthMenu.ascx" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>rb shoe stores</title>
+    <link href="CSS/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/bootstrap-select.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <br />
+                <asp:HyperLink runat="server" Width="200px" ID="hypHome" class="btn btn-primary" NavigateUrl="~/Home.aspx">RB Shoe Store</asp:HyperLink>
+            </div>
+        </div>
+        <Rbs:RbSMonthMenu ID="rbsmonthmenu1" runat="server" />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
